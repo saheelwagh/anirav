@@ -9,7 +9,7 @@ const passport = require("passport");
 //make login page available
 app.use(express.static("public"));
 //serve index file
-app.get("/", (req, res) => res.send("./index2.html"));
+app.get("/", (req, res) => res.send("./index.html"));
 // check login.
 app.post("/submit-form", (req, res) => {
   const password = req.body.password;
