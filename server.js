@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //passport. delete unless necessary
 const passport = require("passport");
 //make login page available
-app.use(express.static("public"));
+app.use(express.static("login"));
 //serve index file
 app.get("/", (req, res) => res.send("./index.html"));
 // check login.
